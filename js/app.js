@@ -90,7 +90,7 @@ const crazyObject = {
       {
         name: "Jeff",
         occupation: "manager"
-      },                //larry.characters[2].favourtieHobby);
+      },           
       {
         name: "funkhauser",
         occupation: "tv dude"
@@ -105,29 +105,51 @@ const crazyObject = {
 }
 
 
-  * "omg my mouth is burning"
+//  * "omg my mouth is burning"
 
 console.log(crazyObject.taco[1].salsa[5]);
 
-  * "Pretty pretty prettayyyyy good"
+//  * "Pretty pretty prettayyyyy good"
 
 console.log(crazyObject.larry.quotes[0]);
 
-  * "Swearing at Larry and Jeff"
+//  * "Swearing at Larry and Jeff"
 
 console.log(crazyObject.larry.characters[2].favourtieHobby);
 
-  * "Chicken Teriyaki Boyyyyyy"
+//  * "Chicken Teriyaki Boyyyyyy"
+
+console.log(crazyObject.larry.nicknames[1]);
+
+//  * The object the contains the name `funkhauser`
+
+console.log(crazyObject.larry.characters[1].name);
 
 
 
-  * The object the contains the name `funkhauser`
+// 4. Object-ception
 
----
-
-&#x1F534; **Commit:** "crazyObject"
-
----
+/* With the following object:
 
 
+const inception = {
+   reality: {
+       dreamLayer1: {
+           dreamLayer2: {
+               dreamLayer3: {
+                   dreamLayer4: {
+                       dreamLayer5: {
+                           dreamLayer6: {
+                               limbo: "Joseph Gordon Levitt"
+                          }
+                       }
+                   }
+               }
+           }
+       }
+   }
+} */
+
+
+inception.reality.dreamLayer1.dreamLayer2.dreamLayer3.dreamLayer4.dreamLayer5.dreamLayer6.limbo = null
 
