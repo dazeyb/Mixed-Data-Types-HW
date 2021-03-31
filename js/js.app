@@ -39,3 +39,32 @@ Datastructure: It could be an array of the student names as objects, each contai
 
 Datatypes: Objects and strings
 Datastructure: It could be an array with the student names as objects, containing their locations as strings, and another array nested in each student object that had their favorite tv shoes as strings. (This could also be an object within the object instead of another array).
+
+
+
+// 2. Take it Easy
+// Q1
+
+let rainbow = ["Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet"];
+
+
+// Q2
+
+rainbow[4];
+
+
+// Q3
+
+const ben = {
+    favoriteFood: "Souls",
+    hobby: "rock climbing",
+    currentCity: "Tijuana",
+    favoriteData: "booleans"
+}
+
+
+// Q4
+
+ben.hobby;
+
+
