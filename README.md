@@ -114,7 +114,7 @@ Use crazyObject to log the following.
 
 With the following object:
 
-```js
+
 const inception = {
    reality: {
        dreamLayer1: {
@@ -132,7 +132,7 @@ const inception = {
        }
    }
 }
-```
+
 
 Change the value of `limbo` to `null`.
 
