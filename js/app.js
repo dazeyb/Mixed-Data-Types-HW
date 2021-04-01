@@ -148,16 +148,18 @@ const inception = {
    }
 } 
 
-
-inception.reality.dreamLayer1.dreamLayer2.dreamLayer3.dreamLayer4.dreamLayer5.dreamLayer6.limbo = null
-
+inception.reality.dreamLayer1.dreamLayer2.dreamLayer3.dreamLayer4.dreamLayer5.dreamLayer6.limbo = null;
 
 
-### 5-7. Bond Films
+
+// 5-7. Bond Films
 
 Copy the following `bondFilms` **array** of **objects** above into your js file. Use loops and conditionals and functions in order to complete the below:
 
-```js
+
+
+
+
 const bondFilms = [
   { "title" : "Skyfall", "year" : 2012, "actor" : "Daniel Craig", "gross" : "$1,108,561,008" },
   { "title" : "Thunderball", "year" : 1965, "actor" : "Sean Connery", "gross" : "$1,014,941,117" },
@@ -183,13 +185,23 @@ const bondFilms = [
   { "title" : "A View to a Kill", "year" : 1985, "actor" : "Roger Moore", "gross" : "$321,172,633" },
   { "title" : "License to Kill", "year" : 1989, "actor" : "Timothy Dalton", "gross" : "$285,157,191" }
 ];
-```
 
-for(i = 1, )
 
-5. Create a new array called `bondTitles` with only the titles of the Bond films, and console.log the new array.
+// Q5
 
-const bondTitles = [];
+
+let bondTitles = [];
+
+const printTitles = function printTitles (arr) {
+    for(let i = 0; i < arr.length; i++ ) {
+
+      bondTitles.push(arr[i].title);
+    }
+    return bondTitles;
+}
+
+printTitles(bondFilms);
+
 
   &#x1F534; **Commit:** "bondTitles array"
 
@@ -203,3 +215,5 @@ const bondTitles = [];
   > _Hint_: To make the grosses into usable numbers, look into the `.replace` Javascript method (there are many ways to do this, however). Look into `parseInt()` also.  
 
   &#x1F534; **Commit:** "bond films gross"
+
+  //.replace(pass in what you want it replaced with);
