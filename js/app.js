@@ -221,16 +221,20 @@ const printOdds = function printOdds (arr) {
   return oddBonds;
 }
 
-printOdds(bondFilms);
 
 
+// 7.
 
-  &#x1F534; **Commit:** "oddBonds"
 
+const printGross = function printGross (arr) {
 
-7. Determine the total cumulative gross of the Bond franchise, and console.log the result. 
-  > _Hint_: To make the grosses into usable numbers, look into the `.replace` Javascript method (there are many ways to do this, however). Look into `parseInt()` also.  
+    let bondBucks = 0;
 
-  &#x1F534; **Commit:** "bond films gross"
+    for(let i = 0; i < arr.length; i++){
+  
+      bondBucks += parseInt(bondFilms[i].gross.replace(/,/g,"").replace("$"g,""));
+    }
+    console.log(bondBucks);
+}
 
-  //.replace(pass in what you want it replaced with);
+printGross(bondFilms);
