@@ -195,7 +195,7 @@ let bondTitles = [];
 const printTitles = function printTitles (arr) {
     for(let i = 0; i < arr.length; i++ ) {
 
-      bondTitles.push(arr[i].titles);
+      bondTitles.push(arr[i].title);
     }
     return bondTitles;
 }
@@ -206,11 +206,11 @@ printTitles(bondFilms);
 
 // 6. Create a new array `oddBonds`, of only the Bond films released on odd-numbered years.
 
+let oddBonds = [];
 
 
 const printOdds = function printOdds (arr) {
   
-    let oddBonds = [];
 
     for(let i = 0; i < arr.length; i++ ) {
     
@@ -221,6 +221,7 @@ const printOdds = function printOdds (arr) {
   return oddBonds;
 }
 
+console.log(printOdds(bondFilms));
 
 
 // 7.
@@ -232,7 +233,7 @@ const printGross = function printGross (arr) {
 
     for(let i = 0; i < arr.length; i++){
   
-      bondBucks += parseInt(bondFilms[i].gross.replace(/,/g,"").replace("$"g,""));
+      bondBucks += parseInt(bondFilms[i].gross.replace(/,/g,"").replace("$",""));
     }
     console.log(bondBucks);
 }
